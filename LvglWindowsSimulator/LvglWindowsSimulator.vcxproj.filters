@@ -946,10 +946,18 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.h">
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
-    <ClInclude Include="lv_conf.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Manifest Include="LvglWindowsSimulator.manifest" />
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\cocktail_gui.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\drinks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\lv_conf_esp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="lv_conf.h">
+      <Filter>lvgl_sim</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha256.c">
@@ -2833,7 +2841,33 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.c">
       <Filter>lvgl\src\widgets\win</Filter>
     </ClCompile>
-    <ClCompile Include="LvglWindowsSimulator.cpp" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_12.c">
+      <Filter>src\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_18.c">
+      <Filter>src\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_24.c">
+      <Filter>src\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_28.c">
+      <Filter>src\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_32.c">
+      <Filter>src\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_36.c">
+      <Filter>src\fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="LvglWindowsSimulator.cpp">
+      <Filter>lvgl_sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\cocktail_gui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\freetype\.clang-format">
@@ -8596,7 +8630,9 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\unity\unity_support.h">
       <Filter>lvgl\tests\unity</Filter>
     </None>
-    <None Include="freetype.props" />
+    <None Include="freetype.props">
+      <Filter>lvgl_sim</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="freetype">
@@ -9856,5 +9892,25 @@
     <Filter Include="lvgl\tests\unity">
       <UniqueIdentifier>{1c7920e7-df01-44ad-bb56-fb7bdb1f2256}</UniqueIdentifier>
     </Filter>
+    <Filter Include="lvgl_sim">
+      <UniqueIdentifier>{87a221b5-a836-4924-830b-3fc6834e60b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lvgl_sim\_exclude">
+      <UniqueIdentifier>{55cf58af-eb0b-4a6f-8b01-1eddc2bf518d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d471e0be-5b7f-48b8-abe4-b05cdc4ba172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{6988a7f0-cf84-4693-b4a2-6819bda52004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fonts">
+      <UniqueIdentifier>{b8027a92-75ed-4734-b62b-5c33b8cd3cbd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="LvglWindowsSimulator.manifest">
+      <Filter>lvgl_sim</Filter>
+    </Manifest>
   </ItemGroup>
 </Project>

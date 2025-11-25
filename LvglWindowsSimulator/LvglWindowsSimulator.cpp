@@ -3,8 +3,7 @@
 #include <LvglWindowsIconResource.h>
 
 #include "lvgl/lvgl.h"
-#include "lvgl/examples/lv_examples.h"
-#include "lvgl/demos/lv_demos.h"
+#include "cocktail_gui.h"
 
 int main()
 {
@@ -21,12 +20,12 @@ int main()
     SetConsoleOutputCP(CP_UTF8);
 #endif
 
-    int32_t zoom_level = 100;
+    int32_t zoom_level = 85; //85 for true scale
     bool allow_dpi_override = false;
     bool simulator_mode = true;
     lv_display_t* display = lv_windows_create_display(
         L"LVGL Windows Simulator Display 1",
-        800,
+        320,
         480,
         zoom_level,
         allow_dpi_override,
@@ -77,8 +76,8 @@ int main()
         return -1;
     }
 
-    lv_demo_widgets();
-    //lv_demo_benchmark();
+    //lv_demo_widgets();
+    cocktail_gui();
 
     while (1)
     {

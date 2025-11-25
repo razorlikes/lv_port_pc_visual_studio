@@ -36,6 +36,7 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\jniet\Documents\PlatformIO\Projects\cocktailinator\src;C:\Users\jniet\Documents\PlatformIO\Projects\cocktailinator\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -354,6 +355,11 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\textarea\lv_textarea.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.h" />
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\cocktail_gui.h" />
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\drinks.h" />
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\lv_conf_esp.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
   <ItemGroup>
@@ -987,6 +993,16 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\textarea\lv_textarea.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\tileview\lv_tileview.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\cocktail_gui.cpp" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_12.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_18.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_24.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_28.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_32.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_36.c" />
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
   <ItemGroup>
