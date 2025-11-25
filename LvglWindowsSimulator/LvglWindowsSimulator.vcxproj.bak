@@ -4195,7 +4195,6 @@
     <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\fonts\roboto_36.c" />
     <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-	</ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
   <ItemGroup>
