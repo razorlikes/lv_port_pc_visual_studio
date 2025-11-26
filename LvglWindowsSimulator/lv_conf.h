@@ -40,7 +40,7 @@
  * - LV_STDLIB_RTTHREAD:    RT-Thread implementation
  * - LV_STDLIB_CUSTOM:      Implement the functions externally
  */
-#define LV_USE_STDLIB_MALLOC    LV_STDLIB_CLIB
+#define LV_USE_STDLIB_MALLOC    LV_STDLIB_BUILTIN
 
 /** Possible values
  * - LV_STDLIB_BUILTIN:     LVGL's built in implementation
@@ -49,7 +49,7 @@
  * - LV_STDLIB_RTTHREAD:    RT-Thread implementation
  * - LV_STDLIB_CUSTOM:      Implement the functions externally
  */
-#define LV_USE_STDLIB_STRING    LV_STDLIB_CLIB
+#define LV_USE_STDLIB_STRING    LV_STDLIB_BUILTIN
 
 /** Possible values
  * - LV_STDLIB_BUILTIN:     LVGL's built in implementation
@@ -58,7 +58,7 @@
  * - LV_STDLIB_RTTHREAD:    RT-Thread implementation
  * - LV_STDLIB_CUSTOM:      Implement the functions externally
  */
-#define LV_USE_STDLIB_SPRINTF   LV_STDLIB_CLIB
+#define LV_USE_STDLIB_SPRINTF   LV_STDLIB_BUILTIN
 
 #define LV_STDINT_INCLUDE       <stdint.h>
 #define LV_STDDEF_INCLUDE       <stddef.h>
@@ -987,7 +987,7 @@
 #define LV_USE_SNAPSHOT 0
 
 /** 1: Enable system monitor component */
-#define LV_USE_SYSMON   1
+#define LV_USE_SYSMON   0
 #if LV_USE_SYSMON
     /** Get the idle percentage. E.g. uint32_t my_get_idle(void); */
     #define LV_SYSMON_GET_IDLE lv_os_get_idle_percent

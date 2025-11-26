@@ -79,6 +79,9 @@ int main()
     //lv_demo_widgets();
     cocktail_gui();
 
+    lv_timer_handler();
+    lv_refr_now(NULL);
+
     while (1)
     {
         uint32_t time_till_next = lv_timer_handler();
