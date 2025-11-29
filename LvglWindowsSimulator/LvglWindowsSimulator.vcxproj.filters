@@ -2087,6 +2087,18 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\gui\CocktailGui.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\gui\MessageBoxHelper.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\gui\MenuView.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\include\gui\DrinkListView.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -4702,6 +4714,18 @@
     <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\gui\CocktailGui.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\gui\DrinkListView.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\gui\MenuView.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\PlatformIO\Projects\cocktailinator\src\gui\MessageBoxHelper.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="freetype">
@@ -6443,6 +6467,12 @@
     </Filter>
     <Filter Include="lvgl\zephyr">
       <UniqueIdentifier>{17539506-a5ac-49ce-9772-7b20ea9d803d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\gui">
+      <UniqueIdentifier>{7e67bf4a-3585-4cc6-90a2-90a0eb4e83f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui">
+      <UniqueIdentifier>{6883c1e8-395c-422f-897c-22313f71dcba}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

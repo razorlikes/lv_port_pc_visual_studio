@@ -5,6 +5,10 @@
 #include "lvgl/lvgl.h"
 #include "cocktail_gui.h"
 
+#include "gui/CocktailGui.h"
+
+static CocktailGui gGui;
+
 int main()
 {
     lv_init();
@@ -76,8 +80,7 @@ int main()
         return -1;
     }
 
-    //lv_demo_widgets();
-    cocktail_gui();
+    gGui.Init(lv_screen_active());
 
     lv_timer_handler();
     lv_refr_now(NULL);
